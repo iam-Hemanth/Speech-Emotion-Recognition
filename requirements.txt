@@ -1,0 +1,21 @@
+# Core
+numpy>=1.23,<2.0
+scipy>=1.10
+joblib>=1.3
+
+# Audio processing
+librosa>=0.10
+soundfile>=0.12
+resampy>=0.4
+
+# Deep Learning (optional; see README for macOS install notes)
+# tensorflow-macos and tensorflow-metal are recommended for Apple Silicon, but
+# installation depends on your Python version. Follow README "macOS quickstart".
+
+# Jupyter (optional, for notebooks)
+jupyter
+matplotlib
+seaborn
+scikit-learn
+streamlit
+
