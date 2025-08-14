@@ -1,0 +1,49 @@
+# Speech Emotion Recognition Project - Cleanup Log
+# Generated during project restructuring on 2024-08-14
+
+# Cache and System Files
+MOVED | __pycache__ -> to_be_deleted/__pycache__ | reason: Python cache directory
+MOVED | .DS_Store -> to_be_deleted/.DS_Store | reason: macOS system file
+
+# Downloads and Temporary Files
+MOVED | downloads -> to_be_deleted/downloads | reason: Temporary downloads directory
+
+# Duplicate Python Files (already moved to src/ser/)
+MOVED | run_inference.py -> to_be_deleted/run_inference.py | reason: Duplicate of src/ser/inference.py
+MOVED | ser_model.py -> to_be_deleted/ser_model.py | reason: Duplicate of src/ser/model.py
+MOVED | tess_pipeline.py -> to_be_deleted/tess_pipeline.py | reason: Duplicate of src/ser/datasets/tess.py
+MOVED | create_features.py -> to_be_deleted/create_features.py | reason: Duplicate of src/ser/features.py
+MOVED | config.py -> to_be_deleted/config.py | reason: Duplicate of src/ser/config.py
+
+# Legacy Directories
+MOVED | Deep Learning -> to_be_deleted/Deep Learning | reason: Legacy directory, notebooks moved to notebooks/
+MOVED | Machine Learning Algorithm - SVM -> to_be_deleted/Machine Learning Algorithm - SVM | reason: Legacy directory, notebooks moved to notebooks/
+MOVED | MLP classifier -> to_be_deleted/MLP classifier | reason: Legacy directory, notebooks moved to notebooks/
+MOVED | Docs -> to_be_deleted/Docs | reason: Legacy documentation directory
+MOVED | TESS_Toronto_emotional_speech_set_data -> to_be_deleted/TESS_Toronto_emotional_speech_set_data | reason: Legacy data directory, should be in data/raw/tess/
+MOVED | features -> to_be_deleted/features | reason: Legacy features directory, should be in data/processed/features/
+MOVED | examples -> to_be_deleted/examples | reason: Legacy examples directory, should be in data/examples/
+MOVED | dataset_features -> to_be_deleted/dataset_features | reason: Legacy dataset directory, should be in data/processed/dataset_features/
+
+# Notebooks (moved to notebooks/)
+MOVED | MLP.ipynb -> notebooks/MLP.ipynb | reason: Moved to organized notebooks directory
+MOVED | Deep Learning/SER(Deep_Learning).ipynb -> notebooks/SER_Deep_Learning.ipynb | reason: Moved to organized notebooks directory
+MOVED | Deep Learning/TestingLive.ipynb -> notebooks/TestingLive.ipynb | reason: Moved to organized notebooks directory
+MOVED | Machine Learning Algorithm - SVM/SER - SVM - Feature Extraction-.ipynb -> notebooks/SER - SVM - Feature Extraction-.ipynb | reason: Moved to organized notebooks directory
+MOVED | Machine Learning Algorithm - SVM/SER_SVM.ipynb -> notebooks/SER_SVM.ipynb | reason: Moved to organized notebooks directory
+
+# Documentation
+MOVED | PROJECT_GUIDE.txt -> docs/PROJECT_GUIDE.md | reason: Moved to organized docs directory
+
+# Media and Assets
+MOVED | media/* -> assets/ | reason: Moved to organized assets directory
+REMOVED | media/ | reason: Empty directory after moving contents
+
+# Summary
+# Total files moved to quarantine: 25+
+# Total files reorganized: 15+
+# Project structure cleaned and standardized
+# All functionality preserved in src/ser/
+# Data organized in data/ subdirectories
+# Notebooks organized in notebooks/
+# Documentation organized in docs/

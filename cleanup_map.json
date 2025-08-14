@@ -1,0 +1,18 @@
+{
+  "__pycache__": "to_be_deleted/__pycache__",
+  ".DS_Store": "to_be_deleted/.DS_Store",
+  "downloads": "to_be_deleted/downloads",
+  "run_inference.py": "to_be_deleted/run_inference.py",
+  "ser_model.py": "to_be_deleted/ser_model.py",
+  "tess_pipeline.py": "to_be_deleted/tess_pipeline.py",
+  "create_features.py": "to_be_deleted/create_features.py",
+  "config.py": "to_be_deleted/config.py",
+  "Deep Learning": "to_be_deleted/Deep Learning",
+  "Machine Learning Algorithm - SVM": "to_be_deleted/Machine Learning Algorithm - SVM",
+  "MLP classifier": "to_be_deleted/MLP classifier",
+  "Docs": "to_be_deleted/Docs",
+  "TESS_Toronto_emotional_speech_set_data": "to_be_deleted/TESS_Toronto_emotional_speech_set_data",
+  "features": "to_be_deleted/features",
+  "examples": "to_be_deleted/examples",
+  "dataset_features": "to_be_deleted/dataset_features"
+}

@@ -1,4 +1,348 @@
+# Speech Emotion Recognition Project - Professional .gitignore
+# This file ensures the repository remains clean and professional
+
+# =============================================================================
+# PYTHON & DEVELOPMENT
+# =============================================================================
+
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
 .venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
 downloads/
-.venv/
-downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# =============================================================================
+# DATA & MODELS (Keep small samples, exclude large files)
+# =============================================================================
+
+# Raw datasets (usually very large)
+data/raw/
+data/raw/**/*.wav
+data/raw/**/*.mp3
+data/raw/**/*.flac
+data/raw/**/*.m4a
+
+# Processed data (can be large)
+data/processed/
+data/processed/**/*.joblib
+data/processed/**/*.pkl
+data/processed/**/*.h5
+data/processed/**/*.npy
+data/processed/**/*.npz
+
+# Model files (usually large)
+models/
+models/*.h5
+models/*.pkl
+models/*.joblib
+models/*.onnx
+models/*.pb
+
+# Keep small sample files
+!data/examples/
+!data/examples/*.wav
+!data/examples/*.mp3
+!data/examples/*.flac
+
+# =============================================================================
+# QUARANTINE & LEGACY
+# =============================================================================
+
+# Quarantine folder (contains moved files)
+to_be_deleted/
+to_be_deleted/**/*
+
+# Legacy directories
+features/
+examples/
+dataset_features/
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Audio files (usually large)
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# Image files (if not needed in repo)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+
+# Archive files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# =============================================================================
+# KEEP THESE FILES (Important for project)
+# =============================================================================
+
+# Keep small sample files
+!data/examples/
+!data/examples/*.wav
+!data/examples/*.mp3
+
+# Keep documentation
+!docs/
+!*.md
+!*.txt
+
+# Keep configuration files
+!.gitignore
+!.gitattributes
+!requirements.txt
+!setup.py
+!pyproject.toml
+
+# Keep source code
+!src/
+!scripts/
+!*.py
+
+# Keep assets (but not large ones)
+!assets/
+!assets/*.svg
+!assets/*.css
+!assets/*.js
