@@ -17,5 +17,9 @@ jupyter
 matplotlib
 seaborn
 scikit-learn
+
+# Web UI
 streamlit
+pandas
+altair
 
